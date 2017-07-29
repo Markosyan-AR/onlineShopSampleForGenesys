@@ -24,6 +24,7 @@ $(function () {
 
     function saveUserData(data) {
         // TODO copypaste, make session storage wrapper
+        // TODO use encrypting for secured data
         sessionStorage.setItem('userData', JSON.stringify(data));
     }
 
