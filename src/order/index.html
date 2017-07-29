@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome the secret shop!</title>
+
+    <link href="index.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
+
+    <!-- Common Kendo UI CSS for web widgets and widgets for data visualization. -->
+    <link href="../../lib/kendo/styles/kendo.common.min.css" rel="stylesheet" />
+
+    <!-- Default Kendo UI theme CSS for web widgets and widgets for data visualization. -->
+    <link href="../../lib/kendo/styles/kendo.default.min.css" rel="stylesheet" />
+
+    <!-- jQuery JavaScript -->
+    <script src="../../lib/kendo/js/jquery.min.js"></script>
+
+    <!-- Kendo UI combined JavaScript -->
+    <script src="../../lib/kendo/js/kendo.all.min.js"></script>
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div>
+        <h5>Order Summary:</h5>
+        <div>
+            <!-- тут, в гриде и на последней странице должно быть переиспользование отображения, но что то не сложилось -->
+            <div class='product-photo large'></div>
+            <div class="product-name"></div>
+        </div>
+    </div>
+
+    <form class="check-out" method="post" action="">
+        <fieldset>
+            <p>
+                <label for="fullName">Your Name</label>
+                <input id="fullName" name="fullName" required pattern="^[a-zA-Zа-яА-Я ,.'-]+" placeholder="Full Name">
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" required type="email">
+            </p>
+
+            <p>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" required type="tel" pattern="\d{3}-\d{3}-\d{4}">
+            </p>
+
+            <p>
+                <label for="cardNumber">Credit Card</label>
+                <input id="cardNumber" name="cardNumber" required type="tel" pattern="\d{19}">
+            </p>
+
+            <p>
+                <label for="comment">Leave a comment for the order</label>
+                <textarea id="comment" name="comment" maxlength="140" rows="3"></textarea>
+            </p>
+
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

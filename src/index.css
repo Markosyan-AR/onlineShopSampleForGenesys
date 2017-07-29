@@ -1,0 +1,28 @@
+/* global styles! agggrhhh */
+.product-photo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 35px;
+    background-position: center center;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-left: 5px;
+}
+
+.product-photo.large {
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+}
+
+.product-name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    padding-left: 3px;
+}
+
+.products-container .k-button.make-order {
+    margin-top: 15px;
+}

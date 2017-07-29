@@ -1,0 +1,19 @@
+.check-out input:invalid {
+  border: 2px solid red;
+}
+
+.check-out input:valid {
+  border: 1px solid black;
+}
+
+.check-out label {
+    width: 100px;
+    display: inline-block;
+}
+.check-out label::after {
+    content: ' :';
+}
+
+.check-out {
+    margin-top: 15px;
+}
